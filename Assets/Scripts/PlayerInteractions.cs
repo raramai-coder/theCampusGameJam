@@ -22,9 +22,24 @@ public class PlayerInteractions : MonoBehaviour
     {
         var ray = new Ray(this.transform.position, this.transform.forward);
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, 100))
+        if (Physics.Raycast(ray, out hit, 5))
         {
-            Debug.Log(hit.transform.gameObject.name);
+
+             Debug.Log(hit.transform.gameObject.name);
+
+
+            if(hit.transform.gameObject.layer == 3)
+            {
+                hit.transform.gameObject.GetComponent<Renderer>().material.color = Color.yellow;
+            }
+
+        
+                //change colour of hit object
+            if(Input.GetKeyDown(KeyCode.E)) //if player 'enter'
+            {
+               //menu pops up
+            }
+
         }
     }
 }
