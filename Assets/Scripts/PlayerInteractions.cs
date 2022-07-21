@@ -33,9 +33,8 @@ public class PlayerInteractions : MonoBehaviour
                 hit.transform.gameObject.GetComponent<Renderer>().material.color = Color.yellow;
             }
 
-        
-                //change colour of hit object
-            if(Input.GetKeyDown(KeyCode.E)) //if player 'enter'
+    
+            if(Input.GetKeyDown(KeyCode.E)) //or if player 'enter'
             {
                //menu pops up
             }
