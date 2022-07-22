@@ -24,6 +24,16 @@ public class Objects : MonoBehaviour
         interactionIndicator.SetActive(false);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("entered");
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        Debug.Log("exited");
+    }
+
     public void ActivateIndicator()
     {
         interactionIndicator.SetActive(true);
