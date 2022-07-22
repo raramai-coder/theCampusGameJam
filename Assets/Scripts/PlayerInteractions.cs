@@ -8,6 +8,7 @@ public class PlayerInteractions : MonoBehaviour
     public bool canMove = true;
 
     private GameManager gameManager;
+    private LayerMask otherLayers;
     [SerializeField] private GameObject playerMovement;
 
     // Start is called before the first frame update
@@ -15,6 +16,7 @@ public class PlayerInteractions : MonoBehaviour
     {
         //currentObject = null;
         gameManager = FindObjectOfType<GameManager>();
+        otherLayers = (1 << 3);
     }
 
     private void SetObject()
@@ -25,12 +27,14 @@ public class PlayerInteractions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         var ray = new Ray(this.transform.position, this.transform.forward);
-        if (Physics.Raycast(ray, out RaycastHit hit, 5))
+        
+        if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity,otherLayers))
         {
 
             //Debug.Log(hit.transform.gameObject.name);
-
+            Debug.DrawRay(this.transform.position, this.transform.forward * hit.distance, Color.red);
 
             if (hit.transform.gameObject.layer == 3)
             {
