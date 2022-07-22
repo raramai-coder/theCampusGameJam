@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b8bfd08368c3347951547960ac7e39, type: 3}
+  m_Name: Roli
+  m_EditorClassIdentifier: 
+  name: Roli
+  personalQuestion1: What happened to the other glove?
+  personalQuestion2: How do you not see black officers as traitors?
+  answer1: After witnessing the June 16th Soweto Youth uprising and seeing how over
+    1000 teenagers/young adults were injured by the police force. I vowed to do everything
+    I could to stop those who have colonised us.
+  answer2: Fight violence with violence.
+  answer3: I lost one, whilst crossing over the Limpopo River from South Africa into
+    Mozambique
+  answer4: My brother is a prison warden, they are just doing their jobs.
+  thought1: He's a skilled boxer, and I heard that he met with Robert Subukwe in
+    person for legal advice.
+  thought2: He's too sympathetic towards black traitors who guard the prisons.
+  decoy: 0

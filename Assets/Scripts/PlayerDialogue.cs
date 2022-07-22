@@ -70,7 +70,7 @@ public class PlayerDialogue : MonoBehaviour
         KalushiAnswers.Add(1, "How does that concern you? Mind your own business.");
         KalushiAnswers.Add(2, "He went to prison for stabbing a police officer.");
 
-        BandileAnswers.Add(1, "Stop messing around and focus on your training");
+        BandileAnswers.Add(1, "Stop messing around and focus on your training.");
         BandileAnswers.Add(2, "Jazz is revolutionary");
 
         JamesAnswers.Add(1, "If you're a pacifisit, why did you join the militiary wing, Umkhonte we Sizwe");
@@ -87,7 +87,7 @@ public class PlayerDialogue : MonoBehaviour
         KalushiGeneralAnswers.Add(2, "Warmonger");
 
         BandileGeneralAnswers.Add(1, "After witnessing the June 16th Soweto Youth uprising and seeing how over 1000 teenagers/young adults were injured by the police force. I vowed to do everything I could to stop those who have colonised us.");
-        BandileGeneralAnswers.Add(2, "Warmonger");
+        BandileGeneralAnswers.Add(2, "Fight violence with violence.");
 
         JamesGeneralAnswers.Add(1, "I heard about what happened at the Soweto Uprsing, and knew that I had to fight for my people.");
         JamesGeneralAnswers.Add(2, "Pacifist");
@@ -99,7 +99,7 @@ public class PlayerDialogue : MonoBehaviour
         RoliGeneralAnswers.Add(1, "Warmonger"); //change
 
         //thoughts about
-        ThoughtsAboutKalushi.Add(1,"He received 10 years in prison, but got out 5 years early, no one knows how.");
+        ThoughtsAboutKalushi.Add(1,"He received a 10 year prison sentence, but got out 5 years early, no one knows how. But one things is for sure, the Apartheid governement doesn't just give leniency like that to black prisoners.");
         ThoughtsAboutKalushi.Add(2,"He's an amazing jazz player, I really enjoy having him around.");
 
         ThoughtsAboutBandile.Add(2,"I love his photos, you should ask him to take one of you.");
@@ -108,7 +108,7 @@ public class PlayerDialogue : MonoBehaviour
         ThoughtsAboutJames.Add(1,"He has strong christian values and sings struggle songs with great fervour!");
         ThoughtsAboutJames.Add(2,"It's a bit suspicious, how he only just joined the ANC");
 
-        ThoughtsAboutThandi.Add(2,"She's a strong yet ruthless fighter, a true beneficiary to the cause");
+        ThoughtsAboutThandi.Add(2,"She's a strong yet ruthless fighter, a true asset to the cause.");
         ThoughtsAboutThandi.Add(1,"I'm not sure how loyal she is to the cause, considering that she is not South African.");
 
         ThoughtsAboutRoli.Add(2,"He's a skilled boxer, and I heard that he met with Robert Subukwe in person for legal advice.");

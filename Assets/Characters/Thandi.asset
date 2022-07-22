@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b8bfd08368c3347951547960ac7e39, type: 3}
+  m_Name: Thandi
+  m_EditorClassIdentifier: 
+  name: Thandi
+  personalQuestion1: If you're not South Africa, why have you joined the ANC?
+  personalQuestion2: What happened to your parents?
+  answer1: I see how harshly the police treat those of us with black skin and I can't
+    stand back and watch it happen anymore.
+  answer2: Fight violence with violence.
+  answer3: I like that they're not afraid to fight fire with fire
+  answer4: My father is South African, he died fighting for the ANC leaving me in
+    an orphanage
+  thought1: She's a strong yet ruthless fighter, a true asset to the cause.
+  thought2: I'm not sure how loyal she is to the cause, considering that she is not
+    South African.
+  decoy: 0
