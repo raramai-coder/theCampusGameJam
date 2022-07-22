@@ -11,7 +11,9 @@ public class Objects : MonoBehaviour
 
 
     [SerializeField] private TextMeshProUGUI objectText;
-    [SerializeField] private GameObject Button;
+    [SerializeField] private GameObject interactionIndicator;
+
+    //private FirstPersonController firstPersonController;
 
     // Start is called before the first frame update
     void Start()
@@ -106,8 +108,8 @@ public class Objects : MonoBehaviour
         
     }*/
 
-    private void OnMouseDown()
+    /*private void OnMouseDown()
     {
         Button.SetActive(true);
-    }
+    }*/
 }
