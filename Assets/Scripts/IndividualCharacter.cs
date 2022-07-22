@@ -5,16 +5,25 @@ using UnityEngine;
 public class IndividualCharacter : MonoBehaviour
 {
     [SerializeField] private Character character;
+
+    private GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void DisplayNotes()
+    {
+        gameManager.currentCharacter = character;
+        gameManager.DisplayCharacterNotes();
+        //Debug.Log(gameManager.currentCharacter.name);
     }
 
     private void Call()
@@ -37,16 +46,10 @@ public class IndividualCharacter : MonoBehaviour
 
     }
 
-    private void Report()
+    public void Report()
     {
-        GameManager gameManager = FindObjectOfType<GameManager>();
-        if (character.decoy)
-        {
-            gameManager.won = true;
-        }
-        else
-        {
-            gameManager.won = false;
-        }
+        
+        gameManager.currentCharacter = character;
+        gameManager.Report();
     }
 }

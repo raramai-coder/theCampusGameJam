@@ -2,24 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
+using TMPro;
+
 
 public class GameManager : MonoBehaviour
 {
     private PlayerInteractions playerInteractions;
-    private Character currentCharacter;
+    
 
     //public bool reported = false;
     public bool won;
+    public Character currentCharacter;
 
     [SerializeField] private GameObject player;
-    [SerializeField] private Character character1,character2,character3,character4,character5;
+    [SerializeField] private TextMeshProUGUI characterNameLabel;
+    [SerializeField] private GameObject Paper, NoteBook;
 
     // Start is called before the first frame update
     void Start()
     {
         playerInteractions = FindObjectOfType<PlayerInteractions>();
-        currentCharacter = character1;
-       
+    }
+
+    public void DisplayCharacterNotes()
+    {
+        Paper.SetActive(true);
+        NoteBook.SetActive(false);
+        characterNameLabel.text = currentCharacter.name + "'s Notes";
     }
 
     public void Report()
@@ -32,6 +41,8 @@ public class GameManager : MonoBehaviour
         {
             won = false;
         }
+
+        Debug.Log(won);
     }
     /*// Update is called once per frame
     void Update()
