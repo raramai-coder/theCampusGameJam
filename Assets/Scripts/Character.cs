@@ -71,4 +71,14 @@ public class Character
     {
 
     }
+
+    // public void removeAskedQuestions(int removeKey)
+    // {
+
+    // }
+
+     public void answer(int answerInt)
+    {
+
+    }
 }
