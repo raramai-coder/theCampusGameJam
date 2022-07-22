@@ -10,6 +10,7 @@ public class PlayerInteractions : MonoBehaviour
     Camera mainCam;
     Vector3 lastPos;
     Vector3 lastCamRotation;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,10 +41,8 @@ public class PlayerInteractions : MonoBehaviour
     
             if((Input.GetKeyDown(KeyCode.E)) && (canMove == true)) //or if player presses 'enter'
             {
+                   canMove = false;
                 Debug.Log("player cannot move");
-               Movement();
-               gameObject.transform.position = lastPos;
-                canMove = false;
             }
             else if((canMove == false) && (Input.GetKeyDown(KeyCode.E)))
               {
@@ -52,11 +51,5 @@ public class PlayerInteractions : MonoBehaviour
 
         
         }
-    }
- 
-     void Movement()
-    {
-        lastPos = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
-        // lastCamRotation = 
     }
 }
