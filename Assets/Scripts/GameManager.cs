@@ -35,4 +35,19 @@ public class GameManager : MonoBehaviour
             player.GetComponent<FirstPersonController>().enabled = false;
         }
     }
+
+    public void DisableInteractableIndicators()
+    {
+        Objects[] allObjects = FindObjectsOfType<Objects>();
+
+        foreach(Objects currentObject in allObjects)
+        {
+            if (currentObject.indicatorActive)
+            {
+                currentObject.interactionIndicator.SetActive(false);
+                currentObject.indicatorActive = false;
+            }
+            
+        }
+    }
 }

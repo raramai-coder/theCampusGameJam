@@ -9,9 +9,11 @@ public class Objects : MonoBehaviour
     private bool firstInteraction = false;
     private string thisObject;
 
+    public bool indicatorActive = false;
 
     [SerializeField] private TextMeshProUGUI objectText;
-    [SerializeField] private GameObject interactionIndicator;
+    [SerializeField] public GameObject interactionIndicator;
+    [SerializeField] public GameObject textDisplay;
 
     //private FirstPersonController firstPersonController;
 
@@ -19,10 +21,17 @@ public class Objects : MonoBehaviour
     void Start()
     {
         thisObject = this.name;
+        interactionIndicator.SetActive(false);
+    }
+
+    public void ActivateIndicator()
+    {
+        interactionIndicator.SetActive(true);
     }
 
     public void DisplayStory()
     {
+        textDisplay.SetActive(true);
         DisplayInteractionText(firstInteraction);
 
         if (firstInteraction)
