@@ -34,12 +34,15 @@ public class DialogueUI : MonoBehaviour
     public bool callRoli = false;
     public bool callBandile = false;
 
+    GameManager GameManager;
+
     // Start is called before the first frame update
     void Start()
     {
         PlayerDialogue = GameObject.FindGameObjectWithTag("Canvas").GetComponent<PlayerDialogue>();
         ChoosePlayerPanel= GameObject.FindGameObjectWithTag("PlayerPanel");
         PanelQ1= GameObject.FindGameObjectWithTag("PanelQ1");
+        GameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -66,6 +69,8 @@ public class DialogueUI : MonoBehaviour
             RoliBtn.interactable = false;
         }
     }
+
+        //question2Panel where user picks NPC to interogate
 
     public void callJamesOption()
     {
@@ -103,5 +108,32 @@ public class DialogueUI : MonoBehaviour
         ChoosePlayerPanel.SetActive(false);
         PanelQ1.SetActive(true);
     }
-}
+
+    //question2Panel with questions
+
+    //  public void Q1()
+    //         {
+    //                 Roli.Answwer(1); 
+    //         }
+
+    //         public void Q2()
+    //         {
+    //             Character.Answer(2);
+    //         }
+
+    //         public void Q3()
+    //         {
+    //             Character.Answwer(3);
+    //         }
+
+    //         public void Q4()
+    //         {
+    //             Character.Answwer(4);
+    //         }
+
+    //         public void Q5()
+    //         {
+    //             Character.Answwer(5);
+    //         }
+    }
 
