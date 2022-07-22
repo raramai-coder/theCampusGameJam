@@ -46,7 +46,7 @@ public class PlayerDialogue : MonoBehaviour
         NPCs.Add("Bandile");
 
         //general questions
-        PlayerGeneralQuestions.Add(1, "What made you want to join Umkhonte we Sizwe?");
+        PlayerGeneralQuestions.Add(1, "What made you want to join Umkhonto we Sizwe?");
         PlayerGeneralQuestions.Add(2, "What do you think about "); //choice of names exclusing player/person talking to
         PlayerGeneralQuestions.Add(3, "Are you more of a pacifist or a warmonger?");
 
