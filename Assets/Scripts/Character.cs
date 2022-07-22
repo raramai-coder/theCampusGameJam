@@ -59,5 +59,38 @@ public class Character : ScriptableObject
         questions.Add(5, "Ask about another person.");
     }
     
-  
+    private void Call()
+    {
+
+    }
+
+    private void DisplayQuestions()
+    {
+
+    }
+
+    private void AskQuestions()
+    {
+
+    }
+
+    private void AskAbout()
+    {
+
+    }
+
+    private void Report()
+    {
+
+    }
+
+    // public void removeAskedQuestions(int removeKey)
+    // {
+
+    // }
+
+     public void answer(int answerInt)
+    {
+
+    }
 }
