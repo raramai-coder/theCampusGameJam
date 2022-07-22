@@ -25,6 +25,12 @@ public class PlayerDialogue : MonoBehaviour
     Dictionary<int, string> ThandiGeneralAnswers = new Dictionary<int, string>();
     Dictionary<int, string> RoliGeneralAnswers = new Dictionary<int, string>();
 
+    Dictionary<string, string> ThoughtsAboutKalushi = new Dictionary<string, string>();
+    Dictionary<string, string> ThoughtsAboutBandile = new Dictionary<string, string>();
+    Dictionary<string, string> ThoughtsAboutJames = new Dictionary<string, string>();
+    Dictionary<string, string> ThoughtsAboutThandi = new Dictionary<string, string>();
+    Dictionary<string, string> ThoughtsAboutRoli = new Dictionary<string, string>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +60,7 @@ public class PlayerDialogue : MonoBehaviour
         ThandiQuestions.Add(2, "If you're not South Africa, why have you joined the ANC?"); 
         ThandiQuestions.Add(1, "What happened to your parents?");
 
-        RoliQuestions.Add(2, "What happened to the other glove?"); //check to see it this object has been interacted with
+        RoliQuestions.Add(2, "What happened to the other glove?"); 
         RoliQuestions.Add(1, "How do you not see black officers as traitors?");
 
 //personal answers
@@ -76,28 +82,39 @@ public class PlayerDialogue : MonoBehaviour
 
         //General answers
 
-        KalushiGeneralAnswers.Add(1, "How does that concern you? Mind your own business.");
-        KalushiGeneralAnswers.Add(2, "He went to prison for stabbing a police officer.");
-        KalushiGeneralAnswers.Add(3, "He went to prison for stabbing a police officer.");
+        KalushiGeneralAnswers.Add(1, "When my brother was sent to prison, the police officers beat my brother to the ground. When the same thing happened to me a few years later, I knew I was going to fight to ensure that never would another innocent black be treated like that again.");
+        KalushiGeneralAnswers.Add(2, "Warmonger");
 
-        BandileGeneralAnswers.Add(1, "What is your full name?");
-        BandileGeneralAnswers.Add(2, "Jazz is revolutionary");
-        BandileGeneralAnswers.Add(3, "Jazz is revolutionary");
+        BandileGeneralAnswers.Add(1, "After witnessing the June 16th Soweto Youth uprising and seeing how over 1000 teenagers/young adults were injured by the police force. I vowed to do everything I could to stop those who have colonised us.");
+        BandileGeneralAnswers.Add(2, "Warmonger");
 
-        JamesGeneralAnswers.Add(1, "If you're a pacifisit, why did you join the militiary wing, Umkhonte we Sizwe");
-        JamesGeneralAnswers.Add(2, "What was it like growing up in a small rural town");
-        JamesGeneralAnswers.Add(3, "What was it like growing up in a small rural town");
+        JamesGeneralAnswers.Add(1, "I heard about what happened at the Soweto Uprsing, and knew that I had to fight for my people.");
+        JamesGeneralAnswers.Add(2, "Pacifist");
 
-        ThandiGeneralAnswers.Add(2, "If you're not South Africa, why have you joined the ANC?"); 
-        ThandiGeneralAnswers.Add(1, "What happened to your parents?");
-        ThandiGeneralAnswers.Add(3, "What happened to your parents?");
+        ThandiGeneralAnswers.Add(2, "I see how harshly the police treat those of us with black skin and I can't stand back and watch it happen anymore."); 
+        ThandiGeneralAnswers.Add(1, "Warmonger");
 
-        RoliGeneralAnswers.Add(2, "What happened to the other glove?"); //check to see it this object has been interacted with
-        RoliGeneralAnswers.Add(1, "How do you not see black officers as traitors?");
-        RoliGeneralAnswers.Add(3, "How do you not see black officers as traitors?");
+        RoliGeneralAnswers.Add(2, "I was help captive by a police officer whilst walking home day, he took his pants off and pissed on me. No one should be treated like this."); //check to see it this object has been interacted with
+        RoliGeneralAnswers.Add(1, "Warmonger");
+
+        //thoughs about
+
+        ThoughtsAboutKalushi.Add("positive","He received 10 years in prison, but got out 5 years early, no one knows how.");
+        ThoughtsAboutKalushi.Add("negative","He's an amazing jazz player, I really enjoy having him around.");
+
+        ThoughtsAboutBandile.Add("positive","I love his photos, you should ask him to take one of you.");
+        ThoughtsAboutBandile.Add("negative","He doesn't like music. Don't ever trust a man who doesn't like music.");
+
+        ThoughtsAboutJames.Add("positive","He has strong christian values and sings struggle songs with great fervour!");
+        ThoughtsAboutJames.Add("negative","It's a bit suspicious, how he only just joined the ANC");
+
+        ThoughtsAboutThandi.Add("positive","She's a strong yet ruthless fighter, a true beneficiary to the cause");
+        ThoughtsAboutThandi.Add("negative","I'm not sure how loyal she is to the cause, considering that she is not South African.");
+
+        ThoughtsAboutRoli.Add("positive","He's a skilled boxer, and I heard that he met with Robert Subukwe in person for legal advice.");
+        ThoughtsAboutRoli.Add("negative","He's too sympathetic towards black traitors who guard the prisons.");
     }
 
-    // Update is called once per frame
     void Update()
     {
         
