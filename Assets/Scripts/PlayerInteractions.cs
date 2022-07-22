@@ -5,7 +5,11 @@ using UnityEngine;
 public class PlayerInteractions : MonoBehaviour
 {
     private Object currentObject;
-    
+    bool canMove = true;
+    [SerializeField]
+    Camera mainCam;
+    Vector3 lastPos;
+    Vector3 lastCamRotation;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,11 +38,25 @@ public class PlayerInteractions : MonoBehaviour
             }
 
     
-            if(Input.GetKeyDown(KeyCode.E)) //or if player 'enter'
+            if((Input.GetKeyDown(KeyCode.E)) && (canMove == true)) //or if player presses 'enter'
             {
-               //menu pops up
+                Debug.Log("player cannot move");
+               Movement();
+               gameObject.transform.position = lastPos;
+                canMove = false;
+            }
+            else if((canMove == false) && (Input.GetKeyDown(KeyCode.E)))
+              {
+                canMove = true;
             }
 
+        
         }
+    }
+ 
+     void Movement()
+    {
+        lastPos = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
+        // lastCamRotation = 
     }
 }
