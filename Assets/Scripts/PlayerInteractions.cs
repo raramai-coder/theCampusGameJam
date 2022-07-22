@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class PlayerInteractions : MonoBehaviour
 {
-    private Object currentObject;
-    [SerializeField]
-    Camera mainCam;
-    Vector3 lastPos;
-    Vector3 lastCamRotation;
+  
     public bool canMove = true;
 
     private GameManager gameManager;
@@ -17,7 +13,7 @@ public class PlayerInteractions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentObject = null;
+        //currentObject = null;
         gameManager = FindObjectOfType<GameManager>();
     }
 
@@ -65,5 +61,9 @@ public class PlayerInteractions : MonoBehaviour
             gameManager.DisableInteractableIndicators();
         }
     }
-}
+
+    private void Movement()
+    {
+        gameManager.ControlMovement();
+    }
 }
