@@ -115,8 +115,8 @@ public class PlayerDialogue : MonoBehaviour
         ThoughtsAboutRoli.Add("negative","He's too sympathetic towards black traitors who guard the prisons.");
     }
 
-    void Update()
+  /*  void Update()
     {
         
-    }
+    }*/
 }
