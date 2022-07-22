@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerInteractions : MonoBehaviour
 {
-    private Objects currentObject;
-    
-    
+    private Object currentObject;
+    [SerializeField]
+    Camera mainCam;
+    Vector3 lastPos;
+    Vector3 lastCamRotation;
     public bool canMove = true;
-
-
 
     private GameManager gameManager;
     [SerializeField] private GameObject playerMovement;
@@ -65,9 +65,5 @@ public class PlayerInteractions : MonoBehaviour
             gameManager.DisableInteractableIndicators();
         }
     }
-
-    private void Movement()
-    {
-        gameManager.ControlMovement();
-    }
+}
 }
