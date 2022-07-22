@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b8bfd08368c3347951547960ac7e39, type: 3}
+  m_Name: Kalushi
+  m_EditorClassIdentifier: 
+  name: Kalushi
+  personalQuestion1: Why was your sentence shortened?
+  personalQuestion2: How did your brother end up in jail?
+  answer1: When my brother was sent to prison, the police officers beat my brother
+    to the ground. When the same thing happened to me a few years later, I knew I
+    was going to fight to ensure that never would another innocent black be treated
+    like that again.
+  answer2: Fight violence with violence.
+  answer3: How does that concern you? Mind your own business.
+  answer4: He went to prison for stabbing a police officer.
+  thought1: He received a 10 year prison sentence, but got out 5 years early, no
+    one knows how. But one things is for sure, the Apartheid governement doesn't
+    just give leniency like that to black prisoners.
+  thought2: He's an amazing jazz player, I really enjoy having him around.
+  decoy: 0

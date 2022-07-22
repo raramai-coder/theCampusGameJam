@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b8bfd08368c3347951547960ac7e39, type: 3}
+  m_Name: James
+  m_EditorClassIdentifier: 
+  name: James
+  personalQuestion1: If you're a pacifisit, why did you join the militiary wing,
+    Umkhonte we Sizwe?
+  personalQuestion2: What was it like growing up in a small rural town?
+  answer1: I heard about what happened at the Soweto Uprsing, and knew that I had
+    to fight for my people.
+  answer2: Pacifist
+  answer3: Just trying to do my part.
+  answer4: It was very religous, but made me the man I am today
+  thought1: He has strong christian values and sings struggle songs with great fervour!
+  thought2: It's a bit suspicious, how he only just joined the ANC
+  decoy: 1

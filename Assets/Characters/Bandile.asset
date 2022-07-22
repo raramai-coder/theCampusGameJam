@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b8bfd08368c3347951547960ac7e39, type: 3}
+  m_Name: Bandile
+  m_EditorClassIdentifier: 
+  name: Bandile
+  personalQuestion1: Why don't you like music?
+  personalQuestion2: What's so great about Jazz?
+  answer1: After witnessing the June 16th Soweto Youth uprising and seeing how over
+    1000 teenagers/young adults were injured by the police force. I vowed to do everything
+    I could to stop those who have colonised us.
+  answer2: Fight violence with violence.
+  answer3: Stop messing around and focus on your training
+  answer4: Jazz is revolutionary.
+  thought1: I love his photos, you should ask him to take one of you.
+  thought2: He doesn't like music. Don't ever trust a man who doesn't like music.
+  decoy: 0
