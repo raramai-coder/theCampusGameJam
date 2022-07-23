@@ -8,7 +8,7 @@ public class IndividualCharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Character currentCharacter = character;
     }
 
     // Update is called once per frame
@@ -22,9 +22,9 @@ public class IndividualCharacter : MonoBehaviour
 
     }
 
-    private void DisplayQuestions()
+    private void DisplayQuestions(int questionNum)
     {
-
+        //questionText = character.questions[questionNum];
     }
 
     private void AskQuestions()

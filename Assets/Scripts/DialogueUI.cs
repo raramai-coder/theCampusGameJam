@@ -36,6 +36,14 @@ public class DialogueUI : MonoBehaviour
 
     GameManager GameManager;
 
+    public IndividualCharacter Bandile;
+    // public IndividualCharacter Bandile;
+    // public IndividualCharacter Bandile;
+    // public IndividualCharacter Bandile;
+    // public IndividualCharacter Bandile;
+
+       [SerializeField] private Character character;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,70 +78,11 @@ public class DialogueUI : MonoBehaviour
         }
     }
 
-        //question2Panel where user picks NPC to interogate
-
-    public void callJamesOption()
-    {
-        callJames = true;
-        openNextPanel();
-    }
-
-      public void callThandiOption()
-    {
-        callThandi = true;
-        openNextPanel();
-    }
-
-      public void callKaliOption()
-    {
-        callKali = true;
-        openNextPanel();
-    }
-
-      public void callRoliOption()
-    {
-        callRoli = true;
-        openNextPanel();
-    }
-
-      public void callBandileOption()
-    {
-        callBandile = true;
-        calledBandile += 1;
-        openNextPanel();
-    }
-
     void openNextPanel()
     {
         ChoosePlayerPanel.SetActive(false);
         PanelQ1.SetActive(true);
     }
 
-    //question2Panel with questions
-
-    //  public void Q1()
-    //         {
-    //                 Roli.Answwer(1); 
-    //         }
-
-    //         public void Q2()
-    //         {
-    //             Character.Answer(2);
-    //         }
-
-    //         public void Q3()
-    //         {
-    //             Character.Answwer(3);
-    //         }
-
-    //         public void Q4()
-    //         {
-    //             Character.Answwer(4);
-    //         }
-
-    //         public void Q5()
-    //         {
-    //             Character.Answwer(5);
-    //         }
     }
 

@@ -10,7 +10,7 @@ public class Character : ScriptableObject
     [SerializeField] public bool decoy = false;
     private int calls;
     private int numOfTimeAskedAbout;
-    private Dictionary<int, string> questions = new Dictionary<int, string>();
+    public Dictionary<int, string> questions = new Dictionary<int, string>();
     private Dictionary<int, string> answers = new Dictionary<int, string>();
     private Dictionary<int, string> thoughts = new Dictionary<int, string>();
     private List<int> availableQuestions;
@@ -25,16 +25,6 @@ public class Character : ScriptableObject
         availableQuestions = new List<int>() { 1, 2, 3, 4, 5 };
     }
 
-
-    /*public Character(string name,bool decoy,string personalQuestion1, string personalQuestion2, string answer1, string answer2, string answer3, string answer4, string thought1, string thought2)
-    {
-        this.name = name;
-        this.decoy = decoy;
-
-        SetQuestions(personalQuestion1,personalQuestion2);
-        SetAnswers(answer1,answer2,answer3,answer4);
-        SetThoughts(thought1,thought2);
-    } */
 
     private void SetThoughts(string thought1,string thought2)
     {
