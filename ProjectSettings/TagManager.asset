@@ -10,6 +10,8 @@ TagManager:
   - Page3
   - Introduction
   - Instructions
+  - NotificationPanel
+  - character
   layers:
   - Default
   - TransparentFX
