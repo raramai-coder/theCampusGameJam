@@ -8,15 +8,24 @@ public class NoteTaking : MonoBehaviour
     public int key;
     public int dictionary;
 
-    /*// Start is called before the first frame update
+    GameObject NotificationPanel;
+    [SerializeField]
+    private AudioSource source;
+
     void Start()
     {
-        
-    }*/
+        NotificationPanel = GameObject.FindGameObjectWithTag("NotificationPanel");
+        NotificationPanel.SetActive(false);
+        source = gameObject.GetComponent<AudioSource>();
+        source.Stop();
+    }
 
 
     public void TakeNoteDialogue()
     {
+
+         StartCoroutine("NotificationTime");
+        
         if (dictionary == 0)
         {
             characterToNoteFrom.notesTaken.Add(characterToNoteFrom.answersNotes[key]);
@@ -31,13 +40,15 @@ public class NoteTaking : MonoBehaviour
 
     private void TakeNoteObject()
     {
-
     }
-    /*// Update is called once per frame
-    void Update()
+
+    IEnumerator NotificationTime()
     {
-        
-    }*/
-
-
+        source.Play();
+        NotificationPanel.SetActive(true);
+        yield return new WaitForSeconds(3);
+        NotificationPanel.SetActive(false);
+        source.Stop();
+    }
 }
+    

@@ -21,7 +21,8 @@ public class DialogueManager : MonoBehaviour
     public Character currentCharacter;
     public PlayerDialogue playerdialogue;
 
-   
+    [SerializeField]
+   IndividualCharacter IndividualCharacter;
 
     void Start()
     {
@@ -194,6 +195,15 @@ public class DialogueManager : MonoBehaviour
         else
         {
             dialoguePanel.SetActive(false);
+            // IndividualCharacter.currentSource.loop = false; 
+            //IndividualCharacter.currentSource.Stop();
+            //gameManager.currentCharacter.currentSource.Stop();
+            //currentCharacter.currentSource.Stop();
+            // foreach(IndividualCharacter char in characters){
+            //     if(char.character.name.Equals(currentCharacter.name)){
+            //         char.character.currentSource.Stop();
+            //     }
+            // }
         }
     }
 

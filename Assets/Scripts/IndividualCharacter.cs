@@ -9,13 +9,17 @@ public class IndividualCharacter : MonoBehaviour
     private GameManager gameManager;
     private DialogueManager dialoguemanager;
     private NoteTaking noteTaking;
+
+    public AudioSource currentSource;
+
     // Start is called before the first frame update
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
         dialoguemanager = FindObjectOfType<DialogueManager>();
         noteTaking = FindObjectOfType<NoteTaking>();
-
+        currentSource = gameObject.GetComponent<AudioSource>();
+        currentSource.Stop();
     }
 
     // Update is called once per frame
@@ -37,6 +41,10 @@ public class IndividualCharacter : MonoBehaviour
         ///++character.calls;
         dialoguemanager.currentCharacter = character;
         dialoguemanager.Question();
+
+            currentSource.loop = true; 
+            currentSource.Play(); 
+            
         
     }
 

@@ -3,7 +3,14 @@ guid: d213b946fdfd3b34484e72ef390f2fc7
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - character: {instanceID: 0}
+  - ThandiClip: {instanceID: 0}
+  - RoliClip: {fileID: 8300000, guid: cb075731d99324d839fab70cf4d6e173, type: 3}
+  - JamesClip: {fileID: 8300000, guid: c116cc215495a44979ad07db222a9f95, type: 3}
+  - KalushiClip: {instanceID: 0}
+  - BandileClip: {instanceID: 0}
+  - currentSource: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

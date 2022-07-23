@@ -19,11 +19,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI characterNameLabel;
     [SerializeField] private GameObject Paper, NoteBook, noteTextPrefab, notesContainer;
 
+    GameObject[] characters;
+
     // Start is called before the first frame update
     void Start()
     {
         playerInteractions = FindObjectOfType<PlayerInteractions>();
         notebookOpen = false;
+        characters = GameObject.FindGameObjectsWithTag("character");
     }
 
     public void ToggleNotebook()
@@ -117,5 +120,17 @@ public class GameManager : MonoBehaviour
             }
             
         }
+    }
+
+    public void Update()
+    {
+        // foreach(GameObject character in characters)
+        // {
+        //     IndividualCharacter script = character.GetComponent<IndividualCharacter>();
+        //     if(script.currentSource.loop == false)
+        //     {
+        //         script.currentSource.Stop();
+        //     }
+        // }
     }
 }
