@@ -23,4 +23,14 @@ MonoBehaviour:
   answer4: Jazz is revolutionary.
   thought1: I love his photos, you should ask him to take one of you.
   thought2: He doesn't like music. Don't ever trust a man who doesn't like music.
+  anote1: Saw 1000 youths injured. Vowed to stop oppressors at all cost.
+  anote2: Not a pacifist. Eye for an eye.
+  anote3: 'Likes being in control '
+  anote4: Big fan of jazz. Revolutionary
+  tnote1: Photogenic. We should take a pic together
+  tnote2: Dislikes music. Very suspicDislikes music. Very sus.
   decoy: 0
+  calls: 0
+  questionsAsked: 0
+  numOfTimeAskedAbout: 0
+  availableQuestions: 0100000002000000030000000400000005000000

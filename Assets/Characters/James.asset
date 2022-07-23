@@ -23,4 +23,14 @@ MonoBehaviour:
   answer4: It was very religous, but made me the man I am today
   thought1: He has strong christian values and sings struggle songs with great fervour!
   thought2: It's a bit suspicious, how he only just joined the ANC
+  anote1: Became aware of uprising. Decidied to fight.
+  anote2: Believes in peace.
+  anote3: Trying to do his part.
+  anote4: Religious background. Christian?
+  tnote1: Great morals and values and sings a lot!
+  tnote2: Suspicious he only joined ANC now. Why?
   decoy: 1
+  calls: 0
+  questionsAsked: 0
+  numOfTimeAskedAbout: 0
+  availableQuestions: 0100000002000000030000000400000005000000

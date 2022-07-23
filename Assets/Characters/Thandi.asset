@@ -24,4 +24,15 @@ MonoBehaviour:
   thought1: She's a strong yet ruthless fighter, a true asset to the cause.
   thought2: I'm not sure how loyal she is to the cause, considering that she is not
     South African.
+  anote1: Refuses to stand by anymore. Ready to act.
+  anote2: Definitley believed in fighting for a cause.
+  anote3: Is someone to act and fight fire with fire.
+  anote4: Father died fighting for orphanage. Is this maybe revenge as well?
+  tnote1: Very strong headed. Doubt anyone could persuade her.
+  tnote2: Doubts concerning loyalty. She's not South African and has not experienced
+    the exact struggles.
   decoy: 0
+  calls: 0
+  questionsAsked: 0
+  numOfTimeAskedAbout: 0
+  availableQuestions: 0100000002000000030000000400000005000000
