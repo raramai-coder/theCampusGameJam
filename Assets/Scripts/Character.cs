@@ -8,10 +8,10 @@ public class Character : ScriptableObject
 
     [SerializeField] private string name, personalQuestion1, personalQuestion2, answer1, answer2, answer3, answer4, thought1, thought2;
     [SerializeField] public bool decoy = false;
-    private int calls;
+    public int calls;
     private int numOfTimeAskedAbout;
     public Dictionary<int, string> questions = new Dictionary<int, string>();
-    private Dictionary<int, string> answers = new Dictionary<int, string>();
+    public Dictionary<int, string> answers = new Dictionary<int, string>();
     private Dictionary<int, string> thoughts = new Dictionary<int, string>();
     public List<int> availableQuestions;
 

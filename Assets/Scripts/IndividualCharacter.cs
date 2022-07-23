@@ -42,9 +42,9 @@ public class IndividualCharacter : MonoBehaviour
 
     }
 
-    private void AskQuestions()
+    public string AnswerQuestions(int questionAsked)
     {
-
+        return null;
     }
 
     private void AskAbout()

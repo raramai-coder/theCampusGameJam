@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     
 
     //public bool reported = false;
-    public bool won;
+    public bool won,notebookOpen;
     public Character currentCharacter;
 
     [SerializeField] private GameObject player;
@@ -22,6 +22,21 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         playerInteractions = FindObjectOfType<PlayerInteractions>();
+        notebookOpen = false;
+    }
+
+    public void ToggleNotebook()
+    {
+        if (notebookOpen)
+        {
+            notebookOpen = false;
+            NoteBook.SetActive(false);
+        }
+        else
+        {
+            notebookOpen = true;
+            NoteBook.SetActive(true);
+        }
     }
 
     public void DisplayCharacterNotes()
