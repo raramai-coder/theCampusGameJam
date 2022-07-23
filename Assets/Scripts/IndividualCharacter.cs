@@ -8,11 +8,13 @@ public class IndividualCharacter : MonoBehaviour
 
     private GameManager gameManager;
     private DialogueManager dialoguemanager;
+    private NoteTaking noteTaking;
     // Start is called before the first frame update
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
         dialoguemanager = FindObjectOfType<DialogueManager>();
+        noteTaking = FindObjectOfType<NoteTaking>();
 
     }
 
@@ -54,10 +56,12 @@ public class IndividualCharacter : MonoBehaviour
         if(character.numOfTimeAskedAbout == 0)
         {
             answer = character.thoughts[1];
+            noteTaking.key = 1;
         }
         else
         {
             answer = character.thoughts[2];
+            noteTaking.key = 2;
         }
         ++character.numOfTimeAskedAbout;
         ++character.calls;

@@ -37,6 +37,8 @@ public class DialogueManager : MonoBehaviour
         questionProfile.SetActive(false);
         askAboutPanel.SetActive(true);
 
+        noteTaking.dictionary = 1;
+
         askAboutLabel.text = "Ask " + currentCharacter.name + " About...";
 
         if (nameButtons.Count > 0)
@@ -93,11 +95,15 @@ public class DialogueManager : MonoBehaviour
             {
                 characterAskedAbout = character;
                 answer = characterAskedAbout.AskAbout();
+                noteTaking.characterToNoteFrom = characterAskedAbout.character;
                 break;
+
             }
         }
         dialogueText.text = answer;
         RemoveQuestion(5);
+
+        
     }
 
     public void AskAboutKalushi()
@@ -127,6 +133,7 @@ public class DialogueManager : MonoBehaviour
             {
                 characterAskedAbout = character;
                 answer = characterAskedAbout.AskAbout();
+                noteTaking.characterToNoteFrom = characterAskedAbout.character;
                 break;
             }
         }
@@ -144,6 +151,7 @@ public class DialogueManager : MonoBehaviour
             {
                 characterAskedAbout = character;
                 answer = characterAskedAbout.AskAbout();
+                noteTaking.characterToNoteFrom = characterAskedAbout.character;
                 break;
             }
         }
@@ -161,6 +169,7 @@ public class DialogueManager : MonoBehaviour
             {
                 characterAskedAbout = character;
                 answer = characterAskedAbout.AskAbout();
+                noteTaking.characterToNoteFrom = characterAskedAbout.character;
                 break;
             }
         }
