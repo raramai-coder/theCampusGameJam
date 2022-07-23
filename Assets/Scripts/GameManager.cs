@@ -44,6 +44,12 @@ public class GameManager : MonoBehaviour
 
         Debug.Log(won);
     }
+
+    public void ExitCharacterNoteBook()
+    {
+        Paper.SetActive(false);
+        NoteBook.SetActive(true);
+    }
     /*// Update is called once per frame
     void Update()
     {

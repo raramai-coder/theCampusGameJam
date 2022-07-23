@@ -13,7 +13,7 @@ public class Character : ScriptableObject
     private Dictionary<int, string> questions = new Dictionary<int, string>();
     private Dictionary<int, string> answers = new Dictionary<int, string>();
     private Dictionary<int, string> thoughts = new Dictionary<int, string>();
-    private List<int> availableQuestions;
+    public List<int> availableQuestions;
 
     private void OnEnable()
     {
