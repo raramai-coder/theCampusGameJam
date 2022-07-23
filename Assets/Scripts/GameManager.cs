@@ -8,6 +8,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     private PlayerInteractions playerInteractions;
+    private List<GameObject> notesPresented = new List<GameObject>();
     
 
     //public bool reported = false;
@@ -16,7 +17,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject player;
     [SerializeField] private TextMeshProUGUI characterNameLabel;
-    [SerializeField] private GameObject Paper, NoteBook;
+    [SerializeField] private GameObject Paper, NoteBook, noteTextPrefab, notesContainer;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +45,23 @@ public class GameManager : MonoBehaviour
         Paper.SetActive(true);
         NoteBook.SetActive(false);
         characterNameLabel.text = currentCharacter.name + "'s Notes";
+
+        if (notesPresented.Count > 0)
+        {
+            foreach(GameObject noteObkect in notesPresented)
+            {
+                Destroy(noteObkect);
+            }
+        }
+
+        foreach(string note in currentCharacter.notesTaken)
+        {
+            GameObject obj = Instantiate(noteTextPrefab);
+            obj.transform.SetParent(notesContainer.transform);
+            TextMeshProUGUI noteText = obj.GetComponent<TextMeshProUGUI>();
+            noteText.text = "~ " + note;
+            notesPresented.Add(obj);
+        }
     }
 
     public void Report()

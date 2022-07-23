@@ -18,6 +18,7 @@ public class Character : ScriptableObject
     public Dictionary<int, string> answersNotes = new Dictionary<int, string>();
     public Dictionary<int, string> thoughtsNotes = new Dictionary<int, string>();
     public List<int> availableQuestions;
+    public List<string> notesTaken = new List<string>();
 
     private void OnEnable()
     {
@@ -29,6 +30,7 @@ public class Character : ScriptableObject
         numOfTimeAskedAbout = 0;
         questionsAsked = 0;
         availableQuestions = new List<int>() { 1, 2, 3, 4, 5 };
+        notesTaken.Clear();
     }
 
     private void SetNotes(string note1, string note2, string note3, string note4, string note5, string note6)

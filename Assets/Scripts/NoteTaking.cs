@@ -4,16 +4,35 @@ using UnityEngine;
 
 public class NoteTaking : MonoBehaviour
 {
-    private Character characterToNoteFrom;
-    private int key;
-    private int dictionary;
+    public Character characterToNoteFrom;
+    public int key;
+    public int dictionary;
 
-    // Start is called before the first frame update
+    /*// Start is called before the first frame update
     void Start()
     {
         
+    }*/
+
+
+    public void TakeNoteDialogue()
+    {
+        if (dictionary == 0)
+        {
+            characterToNoteFrom.notesTaken.Add(characterToNoteFrom.answersNotes[key]);
+            Debug.Log(characterToNoteFrom.answersNotes[key]);
+        }
+        else
+        {
+            characterToNoteFrom.notesTaken.Add(characterToNoteFrom.thoughtsNotes[key]);
+            Debug.Log(characterToNoteFrom.thoughtsNotes[key]);
+        }    
     }
 
+    private void TakeNoteObject()
+    {
+
+    }
     /*// Update is called once per frame
     void Update()
     {

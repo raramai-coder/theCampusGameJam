@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private List<IndividualCharacter> characters;
 
     private GameManager gameManager;
+    private NoteTaking noteTaking;
     private List<GameObject> buttons,nameButtons;
     private List<string> names;
 
@@ -25,6 +26,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
+        noteTaking = FindObjectOfType<NoteTaking>();
         buttons = new List<GameObject>();
         nameButtons = new List<GameObject>();
         //names = new List<string>() {"Bandile","James","Kalushi","Roli","Thandi" };
@@ -252,6 +254,10 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = answer;
         RemoveQuestion(1);
         ++currentCharacter.calls;
+
+        noteTaking.key = 1;
+        noteTaking.dictionary = 0;
+        noteTaking.characterToNoteFrom = currentCharacter;
     }
 
     public void Question2()
@@ -261,6 +267,10 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = answer;
         RemoveQuestion(2);
         ++currentCharacter.calls;
+
+        noteTaking.key = 2;
+        noteTaking.dictionary = 0;
+        noteTaking.characterToNoteFrom = currentCharacter;
     }
 
     public void Question3()
@@ -270,6 +280,10 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = answer;
         RemoveQuestion(3);
         ++currentCharacter.calls;
+
+        noteTaking.key = 3;
+        noteTaking.dictionary = 0;
+        noteTaking.characterToNoteFrom = currentCharacter;
     }
 
     public void Question4()
@@ -279,6 +293,10 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = answer;
         RemoveQuestion(4);
         ++currentCharacter.calls;
+
+        noteTaking.key = 4;
+        noteTaking.dictionary = 0;
+        noteTaking.characterToNoteFrom = currentCharacter;
     }
 
     // Update is called once per frame
