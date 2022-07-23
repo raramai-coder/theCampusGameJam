@@ -773,7 +773,7 @@ PrefabInstance:
     - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 82f857a99f5d9ac4f9658e06b39bba29, type: 3}
+      objectReference: {fileID: 21300000, guid: d15b1c3cf0246654ca121688e5036455, type: 3}
     - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -921,6 +921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 80886d1e93fe397498b8a7131998430f, type: 2}
+  currentSource: {fileID: 0}
 --- !u!1 &280166435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,6 +1355,7 @@ MonoBehaviour:
   - {fileID: 1512253338}
   currentCharacter: {fileID: 11400000, guid: 43b41f48f297ed24cb9eb7be0938f157, type: 2}
   playerdialogue: {fileID: 0}
+  IndividualCharacter: {fileID: 0}
 --- !u!4 &372320114
 Transform:
   m_ObjectHideFlags: 0
@@ -1383,6 +1385,7 @@ MonoBehaviour:
   characterToNoteFrom: {fileID: 0}
   key: 0
   dictionary: 0
+  source: {fileID: 0}
 --- !u!1 &379898934
 GameObject:
   m_ObjectHideFlags: 0
@@ -2821,6 +2824,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 82f857a99f5d9ac4f9658e06b39bba29, type: 3}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4697521977191384266, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -3104,6 +3123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 43b41f48f297ed24cb9eb7be0938f157, type: 2}
+  currentSource: {fileID: 0}
 --- !u!1 &898841845
 GameObject:
   m_ObjectHideFlags: 0
@@ -4244,6 +4264,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7f726fccc4c13b848bed814da694619c, type: 3}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4697521977191384266, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -4538,6 +4574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 652cbd971e8d12c42ac92babb22b80db, type: 2}
+  currentSource: {fileID: 0}
 --- !u!1 &1517411186
 GameObject:
   m_ObjectHideFlags: 0
@@ -4582,6 +4619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 7632ab3a86b7a95448f37fdb2adbf449, type: 2}
+  currentSource: {fileID: 0}
 --- !u!1 &1525012682
 GameObject:
   m_ObjectHideFlags: 0
@@ -6128,6 +6166,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0a449c1e279adfb4e9474e2a2ba74c05, type: 3}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4697521977191384266, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -6479,6 +6533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: add5c901cc2cc6948bd960cd7f2a5204, type: 2}
+  currentSource: {fileID: 0}
 --- !u!1001 &497134396170975004
 PrefabInstance:
   m_ObjectHideFlags: 0
