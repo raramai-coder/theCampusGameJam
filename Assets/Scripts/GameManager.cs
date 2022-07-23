@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class GameManager : MonoBehaviour
@@ -71,11 +72,11 @@ public class GameManager : MonoBehaviour
     {
         if (currentCharacter.decoy)
         {
-            won = true;
+           SceneManager.LoadScene("YouWon");
         }
         else
         {
-            won = false;
+            SceneManager.LoadScene("YouLost");
         }
 
         Debug.Log(won);
