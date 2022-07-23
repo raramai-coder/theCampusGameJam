@@ -182,7 +182,31 @@ public class DialogueManager : MonoBehaviour
     {
         questionProfile.SetActive(true);
         characterName.text = currentCharacter.name;
-        DisplayQuestions();
+
+        if (buttons.Count > 0)
+        {
+            foreach (GameObject button in buttons)
+            {
+                Destroy(button);
+            }
+            buttons.Clear();
+        }
+
+        if (currentCharacter.availableQuestions.Count > 0)
+        {
+            DisplayQuestions();
+        }
+        else
+        {
+            gameManager.ToggleNotebook();
+            //Debug.Log("here");
+            //dialoguePanel.SetActive(true);
+            questionProfile.SetActive(false);
+            askAboutPanel.SetActive(false);
+            notebook.SetActive(true);
+            gameManager.notebookOpen = true;
+        }
+       
     }
 
    public void NextQuestion()
@@ -195,28 +219,12 @@ public class DialogueManager : MonoBehaviour
         else
         {
             dialoguePanel.SetActive(false);
-            // IndividualCharacter.currentSource.loop = false; 
-            //IndividualCharacter.currentSource.Stop();
-            //gameManager.currentCharacter.currentSource.Stop();
-            //currentCharacter.currentSource.Stop();
-            // foreach(IndividualCharacter char in characters){
-            //     if(char.character.name.Equals(currentCharacter.name)){
-            //         char.character.currentSource.Stop();
-            //     }
-            // }
         }
     }
 
     public void DisplayQuestions()
     {
-        if (buttons.Count > 0)
-        {
-            foreach(GameObject button in buttons)
-            {
-                Destroy(button);
-            }
-            buttons.Clear();
-        }
+        
         
         foreach( int questionKey in currentCharacter.availableQuestions)
         {
