@@ -38,7 +38,7 @@ public class IndividualCharacter : MonoBehaviour
         
     }
 
-    private void DisplayQuestions()
+    private void DisplayQuestions(int questionNum)
     {
         
     }

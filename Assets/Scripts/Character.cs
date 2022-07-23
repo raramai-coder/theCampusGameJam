@@ -30,7 +30,6 @@ public class Character : ScriptableObject
     }
 
 
-
     private void SetThoughts(string thought1,string thought2)
     {
         thoughts.Add(1,thought1);
