@@ -14,12 +14,26 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        Scene scene = SceneManager.GetActiveScene();
+
         Page1 = GameObject.FindGameObjectWithTag("Page1");
         Page2 = GameObject.FindGameObjectWithTag("Page2");
         Page3 = GameObject.FindGameObjectWithTag("Page3");
 
         Introduction = GameObject.FindGameObjectWithTag("Introduction");
-        Instruction = GameObject.FindGameObjectWithTag("Instruction");
+        Instruction = GameObject.FindGameObjectWithTag("Instructions");
+
+        if(scene.name == "Introduction")
+        {
+            Instruction.SetActive(false);
+        }
+        else if(scene.name == "Credits")
+        {
+            Page2.SetActive(false);
+            Page3.SetActive(false);
+        }
+    
     }
 
        public void Restart()
