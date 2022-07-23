@@ -773,7 +773,7 @@ PrefabInstance:
     - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 82f857a99f5d9ac4f9658e06b39bba29, type: 3}
+      objectReference: {fileID: 21300000, guid: d15b1c3cf0246654ca121688e5036455, type: 3}
     - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -2921,6 +2921,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 82f857a99f5d9ac4f9658e06b39bba29, type: 3}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4697521977191384266, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -4538,6 +4554,22 @@ PrefabInstance:
     - target: {fileID: 4697521977151956597, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7f726fccc4c13b848bed814da694619c, type: 3}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4697521977191384266, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -6618,6 +6650,22 @@ PrefabInstance:
     - target: {fileID: 4697521977151956597, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0a449c1e279adfb4e9474e2a2ba74c05, type: 3}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697521977176088017, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4697521977191384266, guid: ea78a5f9c8dc4274997e74a74fd26b04, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
