@@ -36,11 +36,15 @@ public class GameManager : MonoBehaviour
         {
             notebookOpen = false;
             NoteBook.SetActive(false);
+            /*playerInteractions.canMove = false;
+            ControlMovement();*/
         }
         else
         {
             notebookOpen = true;
             NoteBook.SetActive(true);
+            /*playerInteractions.canMove = true;
+            ControlMovement();*/
         }
     }
 
