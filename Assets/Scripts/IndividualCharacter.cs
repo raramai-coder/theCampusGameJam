@@ -42,6 +42,7 @@ public class IndividualCharacter : MonoBehaviour
         dialoguemanager.currentCharacter = character;
         dialoguemanager.Question();
 
+            StartCoroutine("Music");
             currentSource.loop = true; 
             currentSource.Play(); 
             
@@ -82,5 +83,11 @@ public class IndividualCharacter : MonoBehaviour
         
         gameManager.currentCharacter = character;
         gameManager.Report();
+    }
+
+    IEnumerator Music()
+    {
+        yield return new WaitForSeconds(10);
+        currentSource.Stop(); 
     }
 }
