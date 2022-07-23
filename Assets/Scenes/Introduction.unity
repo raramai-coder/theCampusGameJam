@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2167,9 +2167,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A decoy has infiltrated the uMkhonto weSizwe camps. It is your job to speak
-    to other comrades, and investigate the campsite in order to discover who the
-    mole is. Be careful as you only have a limited amount of time.
+  m_text: The year is 1976 and a decoy has infiltrated the uMkhonto weSizwe camps.
+    It is your job to speak to other comrades, and investigate the campsite in order
+    to discover who the mole is. And report them before they an leak information
+    to the Apartheid regime that will endanger the lives of your leaders and fellow
+    comrades. Be careful as you only have a limited amount of time.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2307,7 +2309,7 @@ MonoBehaviour:
 
     E - To interact with interactable objects
 
-    mouse
+    Mouse
     - rotate camera/viewpoint'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
