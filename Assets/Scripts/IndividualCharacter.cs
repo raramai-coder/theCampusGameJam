@@ -32,6 +32,7 @@ public class IndividualCharacter : MonoBehaviour
     public void Call()
     {
         gameManager.currentCharacter = character;
+        ///++character.calls;
         dialoguemanager.currentCharacter = character;
         dialoguemanager.Question();
         

@@ -129,8 +129,5 @@ public class Objects : MonoBehaviour
         
     }*/
 
-    /*private void OnMouseDown()
-    {
-        Button.SetActive(true);
-    }*/
+   
 }
