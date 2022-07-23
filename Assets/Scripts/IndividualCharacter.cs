@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class IndividualCharacter : MonoBehaviour
 {
-    [SerializeField] private Character character;
+    [SerializeField] public Character character;
+
+    private GameManager gameManager;
+    private DialogueManager dialoguemanager;
     // Start is called before the first frame update
     void Start()
     {
-        Character currentCharacter = character;
+        gameManager = FindObjectOfType<GameManager>();
+        dialoguemanager = FindObjectOfType<DialogueManager>();
+
     }
 
     // Update is called once per frame
@@ -17,36 +22,52 @@ public class IndividualCharacter : MonoBehaviour
         
     }
 
-    private void Call()
+    public void DisplayNotes()
     {
+        gameManager.currentCharacter = character;
+        gameManager.DisplayCharacterNotes();
+        //Debug.Log(gameManager.currentCharacter.name);
+    }
 
+    public void Call()
+    {
+        gameManager.currentCharacter = character;
+        dialoguemanager.currentCharacter = character;
+        dialoguemanager.Question();
+        
     }
 
     private void DisplayQuestions(int questionNum)
     {
-        //questionText = character.questions[questionNum];
+        
     }
 
-    private void AskQuestions()
+    public string AnswerQuestions(int questionAsked)
     {
-
+        return null;
     }
 
-    private void AskAbout()
+    public string AskAbout()
     {
-
-    }
-
-    private void Report()
-    {
-        GameManager gameManager = FindObjectOfType<GameManager>();
-        if (character.decoy)
+        string answer;
+        if(character.numOfTimeAskedAbout == 0)
         {
-            gameManager.won = true;
+            answer = character.thoughts[1];
         }
         else
         {
-            gameManager.won = false;
+            answer = character.thoughts[2];
         }
+        ++character.numOfTimeAskedAbout;
+        ++character.calls;
+
+        return answer;
+    }
+
+    public void Report()
+    {
+        
+        gameManager.currentCharacter = character;
+        gameManager.Report();
     }
 }

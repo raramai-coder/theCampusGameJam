@@ -73,21 +73,21 @@ public class Objects : MonoBehaviour
         switch (thisObject)
         {
             case "Bible":
-                return "James - reads every night";
+                return "James delights himself in reading the bible and is a firm believer that all the answers are stored in there. He's always got it with him.";
             case "Radio":
-                return "B - listening to radio, some man giving a speech - muffled";
+                return "The message delivered by OR Tambo is seen to have much impact on the people of colour in South Africa.The notion of freedom and war seems to sit rather well with action oritneted young man, Bandile as he switched the previous station to pay close attention to the provocative words of Tambo. ";
             case "JazzRecord":
-                return "Kalu - Checking for scratches and playing";
+                return "Jazz is seen as revolutionary as its improvisation allows for unprecedented freedom of expression through music. Kalu was seen turning up the volume and humming to the tune.";
             case "Handgun":
-                return "Thandi - loaded with bullets";
+                return "In South Africa, black people are prohibited from owning guns. However, as a means of protecting one's self from the terrors that could arise at any given time, Thandi always makes sure that her gun is fully loaded in case she needs to protect herself no matter where she is. This gun is also seen to have been manufactured outside of South Africa. ";
             case "BoxingGlove":
-                return "Roli - Belongs tp him, lost the other while crossing river into botswana";
+                return "Together with other sports, boxing is a protogonist in the dimantle of apartheid as many young black males seek to share their talent witht the world. This one boxing love belongs to Roli who misplaced the other while crossing the river and so his dreams of boxing professionally slipped away.   ";
             case "ContrabanPaper":
-                return "Roli - writing letter to brother who is a prison warden";
+                return " The letter reads as following, 'Sawubona boetie. I hope everything is okay. I don't have much time to speak but I hope all is well. I hope those inmates are giving you too much trouble. Hai, also you and being a prison warden. Mama is still not happy. But I'm safe. You keep safe. Roli";
             case "PoliceBaton":
-                return "Thandi - stole from state police";
+                return "Batons are considered'impact weapons' and have been used to inflict beatings as a means of punishment and deliver unjust treatment. This item was stolen by Thandi as a way of stripping the oppressors of their power";
             case "DrumMagazine":
-                return "Kalu - Crush on Miriam Makeba, reminds him of home";
+                return "Mariam Makeba contributes to the fight against the government through the messages of her songs, tours and concerts that end in political rallies. Kalu was last seen reading the article about her, as he seems to not only have a fascination with jazz but with her too. ";
             default:
                 return "No information to display on Object.";
         }
@@ -99,21 +99,23 @@ public class Objects : MonoBehaviour
         switch (thisObject)
         {
             case "Bible":
-                return "Thandi - Tore a page to roll tobacco";
+                return "It appears to be that portion of a page of the bible has been ripped. The main guilty party thought to be is Thandi as she was seen utilizing an atypical sort of paper to roll her tobacco.";
             case "Radio":
-                return "James - changing channels and doing some tuning";
+                return "All of a sudden the voice of OR Tambo disappears as James changes the radio station for something more suitable for his taste. ";
             case "JazzRecord":
-                return "B - switching off record player and returning it to cover";
+                return "Bandile carefully takes the record out of the record player and puts it away.";
             case "Handgun":
-                return "Roli - thinking abour how bro who is a prison warden would never hold a gun";
+                return "Roli - There's a certain thrill and feeling of fear when holding something as dangerous as a handgun. Roli experienced thris while inspecting the hazardous weapon while thinking about how his brother is around such weapons all the time.";
             case "BoxingGlove":
-                return "Kalu - doesn't like boxing, not physically fit.";
+                return "Even though he's a lot more unfit than he was, he still uses one glove and tries to remember some techniques.";
             case "ContrabanPaper":
-                return "James - writing letter to unkown adress";
+                return "A letter was written by James but no one seems to know who the letter is written for as James refuses to share any detail.";
             case "PoliceBaton":
-                return "Roli -repulsed, reminds him of worst qualities of his brother";
+                return "This serves as a reminder to Roli about the the position or type of occupation his brother has to endure.";
             case "DrumMagazine":
-                return "James - hates that Miriam Makeba had a nine day marriage, she is not a god-fearing woman";
+               case   "Mariam":
+                return
+                    "The article states that Jazz became a political outletfor black musicians and for some, upward mobility and a possibilty to enchance and entrenched clss barriers. Kalu gives this a good and deeper read and in sinspired";
             default:
                 return "No information to display on Object.";
         }
