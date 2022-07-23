@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class IndividualCharacter : MonoBehaviour
 {
-    [SerializeField] private Character character;
+    [SerializeField] public Character character;
 
     private GameManager gameManager;
     private DialogueManager dialoguemanager;
@@ -39,7 +39,7 @@ public class IndividualCharacter : MonoBehaviour
 
     private void DisplayQuestions()
     {
-
+        
     }
 
     public string AnswerQuestions(int questionAsked)
@@ -47,9 +47,21 @@ public class IndividualCharacter : MonoBehaviour
         return null;
     }
 
-    private void AskAbout()
+    public string AskAbout()
     {
+        string answer;
+        if(character.numOfTimeAskedAbout == 0)
+        {
+            answer = character.thoughts[1];
+        }
+        else
+        {
+            answer = character.thoughts[2];
+        }
+        ++character.numOfTimeAskedAbout;
+        ++character.calls;
 
+        return answer;
     }
 
     public void Report()
