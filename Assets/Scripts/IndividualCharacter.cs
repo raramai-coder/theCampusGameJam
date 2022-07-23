@@ -7,10 +7,13 @@ public class IndividualCharacter : MonoBehaviour
     [SerializeField] private Character character;
 
     private GameManager gameManager;
+    private DialogueManager dialoguemanager;
     // Start is called before the first frame update
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
+        dialoguemanager = FindObjectOfType<DialogueManager>();
+
     }
 
     // Update is called once per frame
@@ -26,9 +29,12 @@ public class IndividualCharacter : MonoBehaviour
         //Debug.Log(gameManager.currentCharacter.name);
     }
 
-    private void Call()
+    public void Call()
     {
-
+        gameManager.currentCharacter = character;
+        dialoguemanager.currentCharacter = character;
+        dialoguemanager.Question();
+        
     }
 
     private void DisplayQuestions()
