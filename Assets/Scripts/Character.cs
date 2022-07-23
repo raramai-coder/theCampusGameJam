@@ -7,6 +7,7 @@ public class Character : ScriptableObject
 {
 
     [SerializeField] private string name, personalQuestion1, personalQuestion2, answer1, answer2, answer3, answer4, thought1, thought2;
+    [SerializeField] private string anote1, anote2, anote3, anote4, tnote1, tnote2;
     [SerializeField] public bool decoy = false;
     public int calls;
     public int questionsAsked;
@@ -23,10 +24,22 @@ public class Character : ScriptableObject
         SetQuestions(personalQuestion1, personalQuestion2);
         SetAnswers(answer1, answer2, answer3, answer4);
         SetThoughts(thought1, thought2);
+        SetNotes(anote1, anote2, anote3, anote4, tnote1, tnote2);
         calls = 0;
         numOfTimeAskedAbout = 0;
         questionsAsked = 0;
         availableQuestions = new List<int>() { 1, 2, 3, 4, 5 };
+    }
+
+    private void SetNotes(string note1, string note2, string note3, string note4, string note5, string note6)
+    {
+        answersNotes.Add(1, note1);
+        answersNotes.Add(2, note2);
+        answersNotes.Add(3, note3);
+        answersNotes.Add(4, note4);
+
+        thoughtsNotes.Add(1, note5);
+        thoughtsNotes.Add(2, note6);
     }
 
 
