@@ -25,4 +25,14 @@ MonoBehaviour:
   thought1: He's a skilled boxer, and I heard that he met with Robert Subukwe in
     person for legal advice.
   thought2: He's too sympathetic towards black traitors who guard the prisons.
+  anote1: Aims to stop colonizers.
+  anote2: Violence vs Violence.
+  anote3: Lost one of boxing gloves while crossing river.
+  anote4: Brother is a prison warden. Does he have connections with the whites?
+  tnote1: Met Subukwe, something big. Must know the right people.
+  tnote2: Too sympathetic. Could it be used as a weakness?
   decoy: 0
+  calls: 0
+  questionsAsked: 0
+  numOfTimeAskedAbout: 0
+  availableQuestions: 0100000002000000030000000400000005000000
